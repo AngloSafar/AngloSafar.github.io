@@ -5,4 +5,10 @@ body {
 
 title {
     color: white;
+    font-family: Distraught;
+}
+
+@font-face {
+    font-family: Distraught;
+    src: url("DistraughtItalic-d8EX");
 }
