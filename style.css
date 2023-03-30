@@ -1,5 +1,5 @@
 body { 
-    background-color: red;
+    background-color: rgb(84, 158, 231);
     color: blue;
 }
 
@@ -10,5 +10,5 @@ header {
 
 @font-face {
     font-family: Distraught;
-    src: url("DistraughtItalic-d8EX");
+    src: url("DistraughtItalic-d8EX"); 
 }
