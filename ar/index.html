@@ -51,109 +51,93 @@
         <a-box
         width="1.5"
         height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
+        depth="0.3"
+        position="0 0.5 0" 
         rotation="0 0 0"               
-        src="ring.jpg"
+        src="sky.jpeg"
         transparent="true"
-        alphaTest= "0.5"            
+        alphaTest= "0.5"
         env-map="#env"
         metalness="1.0"
-        roughness="0.0"          
-        >
+        roughness="0.0"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 0 0; 
+        easing: linear; 
+        dur: 1000; 
+        loop:true" 
+          >                  
         </a-box>
-        <!-- !!! END MARKER 1 !!! -->
+
+
       </a-marker>
       
+      <!-- !!! MARKER 2 !!! -->
+
       <a-marker type='pattern' url='pattern-R.patt' smooth="true">
 
-        <a-box
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+        <a-box 
         width="1.5"
         height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
+        depth="0.3"
+        position="0 0.5 0" 
         rotation="0 0 0"               
         src="Saturn Ring.jpg"
         transparent="true"
-        alphaTest= "0.5"            
+        alphaTest= "0.5"
         env-map="#env"
         metalness="1.0"
-        roughness="0.0"          
-        >
+        roughness="0.0"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 0 0; 
+        easing: linear; 
+        dur: 1000; 
+        loop:true"               
+        >                 
         </a-box>
-      </a-marker>
+
+
+      </a-marker>   
+         
+      <!-- !!! MARKER 3 !!! -->           
 
       <a-marker type='pattern' url='pattern-E.patt' smooth="true">
 
-        <a-box
+      <!-- This is the object <a-object> 
+        Edit size, position, texture and animation here -->
+
+        <a-box 
         width="1.5"
         height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
+        depth="0.3"
+        position="0 0.5 0" 
         rotation="0 0 0"               
         src="phone ringing.jpg"
         transparent="true"
-        alphaTest= "0.5"            
+        alphaTest= "0.5"
         env-map="#env"
         metalness="1.0"
-        roughness="0.0"          
-        >
+        roughness="0.0"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 0 0; 
+        easing: linear; 
+        dur: 1000; 
+        loop:true"               
+        >                 
         </a-box>
-      </a-marker>
+
+      </a-marker>       
+
      
-      <a-marker type='pattern' url='pattern-Y.patt' smooth="true">
 
-        <a-box
-        width="1.5"
-        height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
-        rotation="0 0 0"               
-        src="Ring Code.jpg"
-        transparent="true"
-        alphaTest= "0.5"            
-        env-map="#env"
-        metalness="1.0"
-        roughness="0.0"          
-        >
-        </a-box>
-      </a-marker>
-
-      <a-marker type='pattern' url='pattern-O.patt' smooth="true">
-
-        <a-box
-        width="1.5"
-        height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
-        rotation="0 0 0"               
-        src="Code.jpg"
-        transparent="true"
-        alphaTest= "0.5"            
-        env-map="#env"
-        metalness="1.0"
-        roughness="0.0"          
-        >
-        </a-box>
-      </a-marker>
-
-      <a-marker type='pattern' url='pattern-U.patt' smooth="true">
-
-        <a-box
-        width="1.5"
-        height="1.5"
-        depth="0.2"
-        position="0 0.2 0" 
-        rotation="0 0 0"               
-        src="phone_ring_wave.jpg"
-        transparent="true"
-        alphaTest= "0.5"            
-        env-map="#env"
-        metalness="1.0"
-        roughness="0.0"          
-        >
-        </a-box>
-      </a-marker>
 
       <a-entity camera></a-entity>
     </a-scene>
