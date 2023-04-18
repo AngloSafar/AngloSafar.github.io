@@ -1,14 +1,63 @@
 body {
-    background-color: aqua;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(79, 176, 255);
+    color: white
 }
 
 @font-face {
-    font-family: Distraught;
-    src: url("DistraughtItalic-d8EX.woff");
+    font-family: dragyoudown;
+    src: url("DragYouDown-d88V.otf");
 }
 
-h1 {
-    font-family: Distraught;
-    font-size: 50px;
+@font-face {
+    font-family: roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    font-family: dragyoudown;
+    color: rgb(79, 176, 255);
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+div.details {
+    font-family: roboto;
+    font-size: 8px;
+    color: yellow;
+}
+
+div.text {
+    font-family: roboto;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+div.quote {
+    font-family: dragyoudown;
+    color: rgb(255, 251, 39);
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.quoteauthor {
+    font-family: roboto;
+    color: rgb(255, 251, 39);
+    font-style: italic;
+    font-size: 10px;
+    text-align: right;
+}
+
+div.emoji {
+    background-color: white;
+    color: rgb(79, 176, 255);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
