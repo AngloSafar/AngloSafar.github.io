@@ -61,3 +61,8 @@ div.emoji {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+div.image {
+    align-content: center;
+    margin-top: 50px;
+}
