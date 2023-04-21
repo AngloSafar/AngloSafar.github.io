@@ -4,9 +4,18 @@
   <script src="aframe-ar.js"></script>
   <body>
     <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
-
+      <a-assets>
+        <a-cubemap id="env">
+          <img src="Daylight-Box_Right.jpg">
+          <img src="Daylight-Box_Left.jpg">
+          <img src="Daylight-Box_Top.jpg">
+          <img src="Daylight-Box_Bottom.jpg">
+          <img src="Daylight-Box_Front.jpg">
+          <img src="Daylight-Box_Back.jpg">
+        </a-cubemap>
+      </a-assets>
       <a-light type="ambient" color="#888"></a-light>
-      <a-light type="point" intensity="0.1" position="2 4 4"></a-light>
+      <a-light type="point" intensity="0.1" position="3 5 5"></a-light>
 
       <!-- DONT EDIT ABOVE
                 o   o
@@ -234,8 +243,8 @@
         <a-marker type='pattern' url='pattern-M.patt' smooth="true">
   
           <a-torus 
-          width="2"
-          height="2"
+          width="1"
+          height="1"
           depth="0.3"
           position="0 0.5 0" 
           rotation="0 45 0"               
