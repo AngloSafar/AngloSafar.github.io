@@ -4,16 +4,6 @@
   <script src="aframe-ar.js"></script>
   <body>
     <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
-      <a-assets>
-        <a-cubemap id="env">
-          <img src="Daylight-Box_Right.jpg">
-          <img src="Daylight-Box_Left.jpg">
-          <img src="Daylight-Box_Top.jpg">
-          <img src="Daylight-Box_Bottom.jpg">
-          <img src="Daylight-Box_Front.jpg">
-          <img src="Daylight-Box_Back.jpg">
-        </a-cubemap>
-      </a-assets>
 
       <a-light type="ambient" color="#888"></a-light>
       <a-light type="point" intensity="0.1" position="2 4 4"></a-light>
@@ -49,17 +39,24 @@
           Edit size, position, texture and animation here -->
 
         <a-box
-        width="1.5"
-        height="1.5"
+        width="1"
+        height="1"
         depth="0.3"
-        position="0 0.5 0" 
+        position="0 0.2 0" 
         rotation="-45 0 0"               
         src="ring.jpg"
         transparent="true"
         alphaTest= "0.5"
         env-map="#env"
         metalness="1.0"
-        roughness="0.0"                   
+        roughness="0.0"
+        animation="
+        property: rotation; 
+        from: -45 0 0; 
+        to: -45 360 0; 
+        easing: linear; 
+        dur: 100; 
+        loop:true"                   
           >                  
         </a-box>
 
@@ -74,10 +71,10 @@
           Edit size, position, texture and animation here -->
 
         <a-box 
-        width="1.5"
-        height="1.5"
+        width="1"
+        height="1"
         depth="0.1"
-        position="0 0.5 0" 
+        position="0 0.2 0" 
         rotation="-45 0 0"               
         src="Saturn Ring.jpg"
         transparent="true"
@@ -119,14 +116,43 @@
         loop:true"               
         >                 
         </a-box>
+        <a-box 
+        width="1.5"
+        height="1.5"
+        depth="0.3"
+        position="0 0.5 0" 
+        rotation="-45 0 0"               
+        src="phone ringing.jpg"
+        transparent="true"
+        alphaTest= "0.5"
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to:  0 0 360; 
+        easing: linear; 
+        dur: 1000; 
+        loop:true"  
+        animation="
+        property: position; 
+        from: 0 -1 0; 
+        to: 0 0 0; 
+        dir: alternate; 
+        easing: linear;
+        dur: 1000; 
+        loop:true"             
+        >                 
+        </a-box>
 
       </a-marker>       
 
       <a-marker type='pattern' url='pattern-Y.patt' smooth="true">
   
           <a-torus 
-          width="1.5"
-          height="1.5"
+          width="1"
+          height="1"
           depth="0.3"
           position="0 0.5 0" 
           rotation="-45 0 0"               
@@ -151,8 +177,8 @@
         <a-marker type='pattern' url='pattern-O.patt' smooth="true">
   
           <a-box 
-          width="1.5"
-          height="1.5"
+          width="1"
+          height="1"
           depth="0.3"
           position="0 0.5 0" 
           rotation="-45 0 0"               
@@ -170,8 +196,8 @@
         <a-marker type='pattern' url='pattern-U.patt' smooth="true">
   
           <a-box 
-          width="1.5"
-          height="1.5"
+          width="1"
+          height="1"
           depth="0.1"
           position="0 0.5 0" 
           rotation="-45 0 0"               
