@@ -117,12 +117,13 @@
         metalness="0"
         roughness="0.1"                  
         animation="
-        property: rotation; 
-        from: -75 0 0; 
-        to: -75 0 0; 
-        easing: linear; 
-        dur: 1000; 
-        loop:true"               
+        property: position; 
+        from: 0 0 0; 
+        to: 0 0 1; 
+        dir: alternate; 
+        easing: linear;
+        dur: 20; 
+        loop:true"        
         >                 
         </a-box>
         <a-box 
@@ -136,21 +137,14 @@
         alphaTest= "0.5"
         env-map="#env"
         metalness="0"
-        roughness="0.1"                  
-        animation="
-        property: rotation; 
-        from: -75 0 0; 
-        to:  -75 0 360; 
-        easing: linear; 
-        dur: 100; 
-        loop:true"  
+        roughness="0.1"                    
         animation="
         property: position; 
-        from: 0 -1 0; 
-        to: 0 0 0; 
+        from: -0.05 0 0; 
+        to: 0.05 0 0; 
         dir: alternate; 
         easing: linear;
-        dur: 1000; 
+        dur: 20; 
         loop:true"             
         >                 
         </a-box>
@@ -161,7 +155,7 @@
   
           <a-torus 
           radius="0.8"
-          position="0 0 0.5" 
+          position="-0.2 0 0.5" 
           rotation="-45 0 0"               
           src="not_a_ring.jpg"
           transparent="true"
@@ -180,8 +174,8 @@
           </a-torus>
           
           <a-torus 
-          radius="0.8"
-          position="0 0 0.5" 
+          radius="0.6"
+          position="0.2 0 0.5" 
           rotation="0 0 0"               
           src="not_a_ring.jpg"
           transparent="true"
@@ -246,7 +240,7 @@
           height="1"
           depth="0.1"
           position="0 0.2 0" 
-          rotation="-75 0 45"               
+          rotation="-90 0 45"               
           src="I'm not a human.jpg"
           transparent="true"
           alphaTest= "0.5"
@@ -261,7 +255,7 @@
         <a-marker type='pattern' url='pattern-M.patt' smooth="true">
   
           <a-torus 
-          radius="0.8"
+          radius="0.6"
           position="0 0.5 0" 
           rotation="0 45 0"               
           src="skip.jpg"
@@ -285,7 +279,7 @@
         <a-marker type='pattern' url='pattern-N.patt' smooth="true">
   
           <a-sphere 
-          radius="1"
+          radius="0.7"
           position="0 0.5 0" 
           rotation="0 45 0"               
           src="camera_lens.jpg"
@@ -296,8 +290,8 @@
           roughness="0.1"                  
           animation="
           property: rotation; 
-          from: 0 -90 0; 
-          to: 0 -90 0; 
+          from: 0 -90 90; 
+          to: 0 -90 90; 
           easing: linear; 
           dur: 1000; 
           loop:true"               
