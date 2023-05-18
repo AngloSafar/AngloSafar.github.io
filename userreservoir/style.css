@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+div.menu {
+    display: flex;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    font-family: dragyoudown;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 3px black, 0 0 30px white;
+    animation: backgroundcolor 3s infinite alternate;
+}
+
+div.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+div.col {
+    outline: blue;
+    width: 16.6667%;
+}
+
+div.title {
+    font-size: 150px;
+    height: 500px;
+    padding-top: 150px;
+    font-family: dragyoudown;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 3px black, 0 0 30px white;
+    transition: 1s;
+    opacity: 50%;
+}
+
+div.title:hover {
+    opacity: 100%;
+    background-size: 100%;
+}
+
+div.column1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.column2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.column3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.column4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.item {
+    font-size: 30px;
+    font-family: robold;
+    line-height: 40px;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    padding-top: 60px;
+    border-radius: 25px;
+    text-align: center;
+    width: calc(25% - 20px);
+    color: black;
+    background: radial-gradient(circle, yellow, teal);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+div.one {
+    font-size: 30px;
+    font-family: robold;
+    line-height: 40px;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    padding-top: 60px;
+    border-radius: 25px;
+    text-align: center;
+    width: calc(25% - 20px);
+    color: black;
+    background: radial-gradient(circle, yellow, teal);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+div.popup1 {
+    background: radial-gradient(circle, yellow, teal);
+    color: white;
+    font-family: robold;
+    width: calc(25% - 20px);
+    margin: 10px;
+    left: 0px;
+    right: auto;
+    text-align: center;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    border: 2px;
+    border-color: white;
+    cursor: pointer;
+}
+
+div.popup1.show {
+    opacity: 1;
+}
+
+div.item:hover {
+    color: white;
+    background: radial-gradient(circle, rgb(176, 176, 1), rgb(0, 76, 76));
+    box-shadow: inset 0 0 30px white;
+}
+
+div.button {
+    width: 25%;
+    height: 50px;
+    margin-top: 30px;
+    padding-top: 8px;
+    margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border-color: white;
+    color: black;
+    font-family: "robold";
+    background: radial-gradient(circle, yellow, teal);
+    font-size: 25px;
+    text-align: center;
+    transition: color 1s;
+}
+
+div.button:hover {
+    color: white;
+    background: radial-gradient(circle, rgb(176, 176, 1), rgb(0, 76, 76));
+    cursor: pointer;
+}
+
+div.image {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: opacity 1s;
+}
+
+div.image:hover {
+    opacity: 50%;
+    cursor: grab;
+}
+
+body {
+    background-color: black;
+    background-image: url(Artboard\ 1.png);
+    margin: 0px;
+}
+
+div.watermark {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+div.watermark:hover {
+    opacity: 100%;
+    cursor: crosshair;
+}
+
+@font-face {
+    font-family: dragyoudown;
+    src: url("DragYouDown-d88V.otf");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: robold;
+    src: url(Roboto-Bold.ttf);
+}
+
+@keyframes backgroundcolor {
+    0% {
+        background-color: rgb(136, 255, 0);
+    }
+    100% {
+        background-color: green;
+    }
+}

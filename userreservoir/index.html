@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reservoir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+  
+  $("div.one").click(function () {
+    $("div.popup1").addClass("show");
+    $("div.popup1").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+  
+  $("div.two").click(function () {
+    $("div.popup2").addClass("show");
+    $("div.popup2").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+
+  $("div.three").click(function () {
+    $("div.popup3").addClass("show");
+    $("div.popup3").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+
+  $("div.four").click(function () {
+    $("div.popup4").addClass("show");
+    $("div.popup4").click(function () {
+      $(this).removeClass("show");
+    });
+  });
+  
+});
+        </script>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="col">&#9665</div>
+        <div class="col">&#9669</div>
+        <div class="col">&#9667</div>
+        <div class="col">
+            <a href="page2.html">User Reservoir</a>
+        </div>
+        <div class="col">&#9657</div>
+        <div class="col">&#9659</div>
+        <div class="col">&#9655</div>
+    </div>
+    
+    <div class="title">
+        User Reservoir
+    </div>
+    
+    <div class="column1">
+        <div class="item one">Elizabeth<br>Park</div>
+        <div class="item two">Jameson<br>Carter</div>
+        <div class="item three">Hannah<br>Rodriguez</div>
+        <div class="item four">Mason<br>Lee</div>
+    </div>   
+
+    <div class="column2">
+        <div class="item one">Sophia<br>Patel</div>
+        <div class="item two">Banjamin<br>Nguyen</div>
+        <div class="item three">Olivia<br>Garcia</div>
+        <div class="item four">Noah<br>Kim</div>
+    </div>
+
+    <div class="column3">
+        <div class="item one">Isabella<br>Chen</div>
+        <div class="item two">William<br>Singh</div>
+        <div class="item three">Ava<br>Hernandez</div>
+        <div class="item four">Ethan<br>Johnson</div>
+    </div>
+
+    <div class="column4">
+        <div class="item one">Emma<br>Kim</div>
+        <div class="item two">Samuel<br>Wong</div>
+        <div class="item three">Mia<br>Lee</div>
+        <div class="item four">Alexander<br>Brown</div>
+    </div>
+
+    <div class="popup1">
+        Age: <br>
+        Gender: <br>
+        Height: <br>
+        Weight: <br>
+    </div>
+
+    <div class="button">
+        Generate more +
+    </div>
+
+    <div class="image">
+        <img src="people walking.gif" alt="humans being human" style="width: 100%">
+    </div>
+
+    <div class="watermark">Angelo Sarria<br>Augmented Living Website</div>
+
+</body>
+</html>
