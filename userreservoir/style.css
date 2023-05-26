@@ -9,12 +9,12 @@ div.menu {
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 50px;
+    height: 60px;
     font-family: dragyoudown;
     top: 0px;
     left: 0px;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 0 3px black, 0 0 30px white;
     animation: backgroundcolor 3s infinite alternate;
 }
@@ -101,24 +101,139 @@ div.one {
 }
 
 div.popup1 {
-    background: radial-gradient(circle, yellow, teal);
-    color: white;
+    background: radial-gradient(circle, orange, red);
+    color: black;
     font-family: robold;
     width: calc(25% - 20px);
     margin: 10px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
     left: 0px;
     right: auto;
-    text-align: center;
+    text-align: left;
     opacity: 0;
     position: fixed;
-    top: 50%;
+    top: 25%;
     border: 2px;
     border-color: white;
     cursor: pointer;
+    z-index: -10;
+    transition: opacity 0.5s;
 }
 
 div.popup1.show {
     opacity: 1;
+    z-index: 20;
+}
+
+div.popup1:hover {
+    box-shadow: inset 0 0 30px white;
+    color: white;
+}
+
+div.popup2 {
+    background: radial-gradient(circle, orange, red);
+    color: black;
+    font-family: robold;
+    width: calc(25% - 20px);
+    margin: 10px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    left: 25%;
+    right: auto;
+    text-align: left;
+    opacity: 0;
+    position: fixed;
+    top: 25%;
+    border: 2px;
+    border-color: white;
+    cursor: pointer;
+    z-index: -10;
+    transition: opacity 0.5s;
+}
+
+div.popup2.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+div.popup2:hover {
+    box-shadow: inset 0 0 30px white;
+    color: white;
+}
+
+div.popup3 {
+    background: radial-gradient(circle, orange, red);
+    color: black;
+    font-family: robold;
+    width: calc(25% - 20px);
+    margin: 10px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    left: 50%;
+    right: auto;
+    text-align: left;
+    opacity: 0;
+    position: fixed;
+    top: 25%;
+    border: 2px;
+    border-color: white;
+    cursor: pointer;
+    z-index: -10;
+    transition: opacity 0.5s;
+}
+
+div.popup3.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+div.popup3:hover {
+    box-shadow: inset 0 0 30px white;
+    color: white;
+}
+
+div.popup4 {
+    background: radial-gradient(circle, orange, red);
+    color: black;
+    font-family: robold;
+    width: calc(25% - 20px);
+    margin: 10px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    left: 75%;
+    right: auto;
+    text-align: left;
+    opacity: 0;
+    position: fixed;
+    top: 25%;
+    border: 2px;
+    border-color: white;
+    cursor: pointer;
+    z-index: -10;
+    transition: opacity 0.5s;
+}
+
+div.popup4.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+div.popup4:hover {
+    box-shadow: inset 0 0 30px white;
+    color: white;
 }
 
 div.item:hover {
@@ -130,9 +245,9 @@ div.item:hover {
 div.button {
     width: 25%;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-top: 8px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
@@ -149,6 +264,15 @@ div.button:hover {
     color: white;
     background: radial-gradient(circle, rgb(176, 176, 1), rgb(0, 76, 76));
     cursor: pointer;
+    box-shadow: inset 0 0 10px white;
+}
+
+div.banner {
+    color: white;
+    font-family: dragyoudown;
+    font-size: 20px;
+    padding-top: 5px;
+    animation: backgroundcolor 3s infinite alternate
 }
 
 div.image {
@@ -161,6 +285,34 @@ div.image {
 div.image:hover {
     opacity: 50%;
     cursor: grab;
+}
+
+div.bin {
+    opacity: 0;
+    z-index: 0;
+    text-align: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+div.bin.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+div.binopen {
+    opacity: 0;
+    z-index: 0;
+    text-align: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+div.binopen.show {
+    opacity: 1;
+    z-index: 20;
 }
 
 body {
@@ -180,6 +332,30 @@ div.watermark {
 div.watermark:hover {
     opacity: 100%;
     cursor: crosshair;
+}
+
+span.age {
+    background: black;
+    color: black;
+    transform: rotate(-2deg);
+}
+
+span.gender {
+    background-color: black;
+    color: black;
+    transform: rotate(3deg);
+}
+
+span.height {
+    background-color: black;
+    color: black;
+    transform: rotate(2deg);
+}
+
+span.weight {
+    background-color: black;
+    color: black;
+    transform: rotate(-3deg);
 }
 
 @font-face {

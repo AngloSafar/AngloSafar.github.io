@@ -17,6 +17,13 @@
       $(this).removeClass("show");
     });
   });
+
+  $("div.one").click(function () {
+    $("div.popup1").addClass("show");
+    $("div.popup1").click(function () {
+      $(this).removeClass("show");
+    });
+  });
   
   $("div.two").click(function () {
     $("div.popup2").addClass("show");
@@ -38,9 +45,33 @@
       $(this).removeClass("show");
     });
   });
-  
+
+  $("div.image").hover(function () {
+    $("div.bin").addClass("show");
+    $("div.image").on("mouseleave", function () {
+      $("div.bin").removeClass("show");
+    });
+  });
+
+  $("div.bin").hover(function () {
+    $("div.binopen").addClass("show");
+    $("div.binopen").on("mouseleave", function () {
+      $(this).removeClass("show");
+    });
+  });
+
+  $("div.image").on("drag", function() {
+		var audio = $("audio.helpme")[0];
+		audio.play();
+	});
 });
+
         </script>
+
+<audio class="helpme" controls>
+  <source src="helpme.mp3">
+</audio>
+
 </head>
 <body>
 
@@ -89,18 +120,53 @@
     </div>
 
     <div class="popup1">
-        Age: <br>
-        Gender: <br>
-        Height: <br>
-        Weight: <br>
+        Age:   <span class="age">24 years old</span> <br> <br>
+        Gender:   <span class="gender">Female</span> <br> <br>
+        Height:   <span class="height">5 Foot 7 Inches</span> <br> <br>
+        Weight:   <span class="weight">62 Kilograms</span> <br> <br>
+    </div>
+
+    <div class="popup2">
+      Age:   <span class="age">38 years old</span> <br> <br>
+      Gender:   <span class="gender">Male</span> <br> <br>
+      Height:   <span class="height">6 Foot 2 Inches</span> <br> <br>
+      Weight:   <span class="weight">80 Kilograms</span> <br> <br>
+    </div>
+
+    <div class="popup3">
+    Age:   <span class="age">53 years old</span> <br> <br>
+    Gender:   <span class="gender">Male</span> <br> <br>
+    Height:   <span class="height">5 Foot 11 Inches</span> <br> <br>
+    Weight:   <span class="weight">76 Kilograms</span> <br> <br>
+    </div>
+
+    <div class="popup4">
+    Age:   <span class="age">41 years old</span> <br> <br>
+    Gender:   <span class="gender">Female</span> <br> <br>
+    Height:   <span class="height">5 Foot 9 Inches</span> <br> <br>
+    Weight:   <span class="weight">64 Kilograms</span> <br> <br>
     </div>
 
     <div class="button">
         Generate more +
     </div>
 
+    <div class="banner">
+      <marquee behavior="scroll" direction="left" scrollamount="10">
+        Become human: select a wandering soul to replace
+      </marquee>
+    </div>
+
     <div class="image">
         <img src="people walking.gif" alt="humans being human" style="width: 100%">
+    </div>
+
+    <div class="bin">
+      <img src="bin-closed.png" alt="human recycling" style="width: 15%">
+    </div>
+
+    <div class="binopen">
+      <img src="bin-open.png" alt="dumping" style="width: 15%">
     </div>
 
     <div class="watermark">Angelo Sarria<br>Augmented Living Website</div>
