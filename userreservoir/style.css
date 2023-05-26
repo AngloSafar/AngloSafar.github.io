@@ -77,27 +77,20 @@ div.item {
     border-radius: 25px;
     text-align: center;
     width: calc(25% - 20px);
-    color: black;
-    background: radial-gradient(circle, yellow, teal);
+    color: white;
+    background: black;
     transition: color 0.5s;
     cursor: pointer;
+    box-shadow: inset 0 0 30px white;
+    opacity: 50%;
 }
 
-div.one {
-    font-size: 30px;
-    font-family: robold;
-    line-height: 40px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    padding-top: 60px;
-    border-radius: 25px;
-    text-align: center;
-    width: calc(25% - 20px);
-    color: black;
-    background: radial-gradient(circle, yellow, teal);
-    transition: color 0.5s;
-    cursor: pointer;
+div.item:hover {
+    color: white;
+    background: radial-gradient(circle, teal, yellow);
+    box-shadow: inset 0 0 50px white;
+    opacity: 100%;
+    transition: opacity 1s;
 }
 
 div.popup1 {
@@ -236,12 +229,6 @@ div.popup4:hover {
     color: white;
 }
 
-div.item:hover {
-    color: white;
-    background: radial-gradient(circle, rgb(176, 176, 1), rgb(0, 76, 76));
-    box-shadow: inset 0 0 30px white;
-}
-
 div.button {
     width: 25%;
     height: 50px;
@@ -252,19 +239,97 @@ div.button {
     margin-right: auto;
     border-radius: 25px;
     border-color: white;
-    color: black;
+    box-shadow: inset 0 0 10px white ;
+    color: white;
     font-family: "robold";
-    background: radial-gradient(circle, yellow, teal);
+    background: black;
     font-size: 25px;
     text-align: center;
     transition: color 1s;
+    opacity: 60%;
 }
 
 div.button:hover {
     color: white;
-    background: radial-gradient(circle, rgb(176, 176, 1), rgb(0, 76, 76));
+    background: radial-gradient(circle, teal, yellow);
     cursor: pointer;
     box-shadow: inset 0 0 10px white;
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+div.proofofrobo {
+    visibility: hidden;
+    height: 0px;
+}
+
+div.proofofrobo.show {
+    width: 50%;
+    height: 100px;
+    margin-left: 25%;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: roboto;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    top: 40%;
+    left:0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    visibility: visible;
+}
+
+div.iamnotahuman {
+    margin-left: 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+div.prompty {
+    text-align: center;
+    width: 60%;
+    padding-top: 15px;
+}
+
+div.error {
+    visibility: hidden;
+    height: 0px;
+}
+
+div.error.show {
+    width: 50%;
+    height: 100px;
+    margin-left: 25%;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: roboto;
+    color: white;
+    background:blue;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    top: 40%;
+    left:0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-left: 10px;
+    visibility: visible;
+    transition-delay: 1s;
+}
+
+span.continue {
+    font-size: 10px;
+    margin-left: 40%;
+}
+
+span.here {
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 div.banner {
@@ -319,6 +384,9 @@ body {
     background-color: black;
     background-image: url(Artboard\ 1.png);
     margin: 0px;
+    background-repeat: no repeat;
+    background-position: centre 10px;
+    width: 100%;
 }
 
 div.watermark {

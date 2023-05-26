@@ -46,6 +46,18 @@
     });
   });
 
+  $("div.button").click(function () {
+    $("div.proofofrobo").addClass("show");
+    $("div.iamnothuman").click(function () {
+      $("div.error").addClass("show");
+      $("div.proofofrobo").removeClass("show");
+    });
+  });
+
+  $("span.here").click(function () {
+    $("div.error").removeClass("show");;
+  });
+
   $("div.image").hover(function () {
     $("div.bin").addClass("show");
     $("div.image").on("mouseleave", function () {
@@ -64,12 +76,21 @@
 		var audio = $("audio.helpme")[0];
 		audio.play();
 	});
+
+  $("div.iamnothuman").on("mouseup", function() {
+		var audio = $("audio.errorsound")[0];
+		audio.play();
+	});
 });
 
         </script>
 
 <audio class="helpme" controls>
   <source src="helpme.mp3">
+</audio>
+
+<audio class="errorsound" controls>
+  <source src="errorsound.mp3">
 </audio>
 
 </head>
@@ -149,6 +170,20 @@
 
     <div class="button">
         Generate more +
+    </div>
+
+    <div class="proofofrobo">
+      <div class="iamnothuman">
+        <img src="Roboto_box.png" alt="are you a robot?" height="60px">
+      </div>
+      <div class="prompty">
+        I am not a human
+      </div>
+    </div>
+
+    <div class="error">
+      :( &nbsp Unfortunately, it appears you are a human <br>
+      <span class="continue">(click <span class="here">here</span> to continue)</span>
     </div>
 
     <div class="banner">
