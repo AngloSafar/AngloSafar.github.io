@@ -101,7 +101,7 @@ div.one {
 }
 
 div.popup1 {
-    background: radial-gradient(circle, orange, red);
+    background: radial-gradient(circle, teal, yellow);
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -135,7 +135,7 @@ div.popup1:hover {
 }
 
 div.popup2 {
-    background: radial-gradient(circle, orange, red);
+    background: radial-gradient(circle, teal, yellow);
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -169,7 +169,7 @@ div.popup2:hover {
 }
 
 div.popup3 {
-    background: radial-gradient(circle, orange, red);
+    background: radial-gradient(circle, teal, yellow);
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -203,7 +203,7 @@ div.popup3:hover {
 }
 
 div.popup4 {
-    background: radial-gradient(circle, orange, red);
+    background: radial-gradient(circle, teal, yellow);
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
