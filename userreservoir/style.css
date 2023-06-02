@@ -131,12 +131,14 @@ div.popup1.show {
 }
 
 div.popup1:hover {
-    box-shadow: inset 0 0 30px white;
+    background: url(moss2glow.png);
+    background-size: cover;
     color: white;
 }
 
 div.popup2 {
-    background: radial-gradient(circle, teal, yellow);
+    background: url(moss2.png);
+    background-size: cover;
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -165,12 +167,14 @@ div.popup2.show {
 }
 
 div.popup2:hover {
-    box-shadow: inset 0 0 30px white;
+    background: url(moss2glow.png);
+    background-size: cover;
     color: white;
 }
 
 div.popup3 {
-    background: radial-gradient(circle, teal, yellow);
+    background: url(moss2.png);
+    background-size: cover;
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -199,12 +203,14 @@ div.popup3.show {
 }
 
 div.popup3:hover {
-    box-shadow: inset 0 0 30px white;
+    background: url(moss2glow.png);
+    background-size: cover;
     color: white;
 }
 
 div.popup4 {
-    background: radial-gradient(circle, teal, yellow);
+    background: url(moss2.png);
+    background-size: cover;
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -233,7 +239,8 @@ div.popup4.show {
 }
 
 div.popup4:hover {
-    box-shadow: inset 0 0 30px white;
+    background: url(moss2glow.png);
+    background-size: cover;
     color: white;
 }
 
