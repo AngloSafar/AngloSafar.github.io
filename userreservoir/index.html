@@ -72,6 +72,19 @@
     });
   });
 
+  $("div.item").click(function () {
+    $("span.age").addClass("show"); 
+    $("span.gender").addClass("show");
+    $("span.weight").addClass("show");
+    $("span.height").addClass("show");
+    $("span.age").click(function () {
+      $(span.age).removeClass("show");
+      $(span.gender).removeClass("show");
+      $(span.height).removeClass("show");
+      $(span.weight).removeClass("show");
+    });
+  });
+
   $("div.image").on("drag", function() {
 		var audio = $("audio.helpme")[0];
 		audio.play();

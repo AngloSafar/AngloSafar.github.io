@@ -35,7 +35,12 @@ div.title {
     padding-top: 150px;
     font-family: dragyoudown;
     color: white;
+    background-image: url(growing.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     text-align: center;
+    width: 100%;
     text-shadow: 0 0 3px black, 0 0 30px white;
     transition: 1s;
     opacity: 50%;
@@ -43,7 +48,7 @@ div.title {
 
 div.title:hover {
     opacity: 100%;
-    background-size: 100%;
+    cursor: default;
 }
 
 div.column1 {
@@ -77,24 +82,27 @@ div.item {
     border-radius: 25px;
     text-align: center;
     width: calc(25% - 20px);
-    color: white;
+    color: black;
     background: black;
+    background-image: url(moss_invert.png);
+    background-size: cover;
     transition: color 0.5s;
     cursor: pointer;
-    box-shadow: inset 0 0 30px white;
-    opacity: 50%;
+    opacity: 100%;
 }
 
 div.item:hover {
     color: white;
-    background: radial-gradient(circle, teal, yellow);
-    box-shadow: inset 0 0 50px white;
+    box-shadow: inset 0 0 20px white;
+    background-image: url(moss_texture.png);
+    background-size: cover;
     opacity: 100%;
-    transition: opacity 1s;
+    transition: background-image 1s;
 }
 
 div.popup1 {
-    background: radial-gradient(circle, teal, yellow);
+    background: url(moss2.png);
+    background-size: cover;
     color: black;
     font-family: robold;
     width: calc(25% - 20px);
@@ -246,7 +254,7 @@ div.button {
     font-size: 25px;
     text-align: center;
     transition: color 1s;
-    opacity: 60%;
+    opacity: 100%;
 }
 
 div.button:hover {
@@ -264,9 +272,9 @@ div.proofofrobo {
 }
 
 div.proofofrobo.show {
-    width: 50%;
+    width: 40%;
     height: 100px;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-right: auto;
     font-size: 20px;
     font-family: roboto;
@@ -301,9 +309,9 @@ div.error {
 }
 
 div.error.show {
-    width: 50%;
+    width: 40%;
     height: 100px;
-    margin-left: 25%;
+    margin-left: 30%;
     margin-right: auto;
     font-size: 20px;
     font-family: roboto;
@@ -382,7 +390,6 @@ div.binopen.show {
 
 body {
     background-color: black;
-    background-image: url(Artboard\ 1.png);
     margin: 0px;
     background-repeat: no repeat;
     background-position: centre 10px;
@@ -402,28 +409,52 @@ div.watermark:hover {
     cursor: crosshair;
 }
 
+span.age.show {
+    animation: gradpos 0.5s linear;
+}
+
+span.gender.show {
+    animation: gradpos 0.5s linear;
+}
+
+span.height.show {
+    animation: gradpos 0.5s linear;
+}
+
+span.weight.show {
+    animation: gradpos 0.5s linear;
+}
+
 span.age {
-    background: black;
+    background: linear-gradient(90deg, transparent 0%, black 80%);
     color: black;
     transform: rotate(-2deg);
+    background-position: 100px;
+    background-size: 400% 400%;
 }
 
 span.gender {
-    background-color: black;
+    background: linear-gradient(90deg, transparent 0%, black 80%);
     color: black;
     transform: rotate(3deg);
+    background-position: 60px;
+    background-size: 400% 400%;
 }
 
 span.height {
-    background-color: black;
+    background: linear-gradient(90deg, transparent 0%, black 80%);
     color: black;
     transform: rotate(2deg);
+    background-position: 150px;
+    background-size: 400% 400%;
 }
 
 span.weight {
-    background-color: black;
+    background: linear-gradient(90deg, transparent 0%, black 80%);
     color: black;
     transform: rotate(-3deg);
+    background-position: 100px;
+    background-size: 400% 400%;
 }
 
 @font-face {
@@ -447,5 +478,14 @@ span.weight {
     }
     100% {
         background-color: green;
+    }
+}
+
+@keyframes gradpos {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: 100px;
     }
 }
