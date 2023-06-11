@@ -59,16 +59,26 @@
   });
 
   $("div.image").hover(function () {
-    $("div.bin").addClass("show");
+    $("div.binclosed").addClass("show");
     $("div.image").on("mouseleave", function () {
-      $("div.bin").removeClass("show");
+      $("div.binclosed").removeClass("show");
     });
   });
 
-  $("div.bin").hover(function () {
+  $("div.binopen").hover(function () {
+    $("div.binclosed").addClass("show");;
+  });
+
+  $("div.binopen").on("mouseleave", function () {
+    $("div.binclosed").removeClass("show");;
+  });
+
+  $("div.image").on("mousedown", function () {
     $("div.binopen").addClass("show");
-    $("div.binopen").on("mouseleave", function () {
-      $(this).removeClass("show");
+    $("div.binclosed").removeClass("show");
+    $("div.image").on("dragend", function () {
+      $("div.binopen").removeClass("show");
+      $("div.binclosed").addClass("show");
     });
   });
 
@@ -82,6 +92,26 @@
       $("span.gender").removeClass("show");
       $("span.height").removeClass("show");
       $("span.weight").removeClass("show");
+    });
+  });
+
+  $("div.colleft").click(function () {
+    $("div.person").addClass("show");
+    $("div.colright").addClass("show");
+    $("span.info").addClass("show");
+  });
+
+  $("div.colright").click(function () {
+    $("div.person").removeClass("show");
+    $("div.colright").removeClass("show");
+    $("span.info").removeClass("show");
+  });
+
+  $("div.person").click(function () {
+    $("div.proofofrobo").addClass("show");
+    $("div.iamnothuman").click(function () {
+      $("div.error").addClass("show");
+      $("div.proofofrobo").removeClass("show");
     });
   });
 
@@ -99,7 +129,7 @@
         </script>
 
 <audio class="helpme" controls>
-  <source src="helpme.mp3">
+  <source src="helpme1.mp3">
 </audio>
 
 <audio class="errorsound" controls>
@@ -201,7 +231,7 @@
 
     <div class="banner">
       <marquee behavior="scroll" direction="left" scrollamount="10">
-        Become human: select a wandering soul to replace
+        Become human: select a wandering soul to replace upon death by dragging them into the bin
       </marquee>
     </div>
 
@@ -209,12 +239,26 @@
         <img src="people walking.gif" alt="humans being human" style="width: 100%">
     </div>
 
-    <div class="bin">
-      <img src="bin-closed.png" alt="human recycling" style="width: 15%">
+    <div class="banner2">&nbsp;</div>
+
+    <div class="binclosed">
+      <img src="bin-closed.png" alt="human recycling" style="width: 100%">
     </div>
 
     <div class="binopen">
-      <img src="bin-open.png" alt="dumping" style="width: 15%">
+      <img src="bin-open.png" alt="dumping" style="width: 100%">
+    </div>
+
+    <div class="collectiontitle">
+      <div class="colleft">View collection +</div>
+      <div class="colright">^ Collapse</div>
+    </div>
+
+    <div class="collection">
+      <div class="person 1">Ethan Sullivan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="person 1">Sophia Carter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="person 1">Isabella Foster &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="person 1">William Jenkins &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
     </div>
 
     <div class="watermark">Angelo Sarria<br>Augmented Living Website</div>
