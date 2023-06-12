@@ -79,6 +79,8 @@
     $("div.image").on("dragend", function () {
       $("div.binopen").removeClass("show");
       $("div.binclosed").addClass("show");
+      $("div.new").addClass("show");
+      $("span.infonew").addClass("show");
     });
   });
 
@@ -105,6 +107,14 @@
     $("div.person").removeClass("show");
     $("div.colright").removeClass("show");
     $("span.info").removeClass("show");
+  });
+
+  $("div.new").click(function () {
+    $("div.proofofrobo").addClass("show");
+    $("div.iamnothuman").click(function () {
+      $("div.error").addClass("show");
+      $("div.proofofrobo").removeClass("show");
+    });
   });
 
   $("div.person").click(function () {
@@ -255,10 +265,10 @@
     </div>
 
     <div class="collection">
-      <div class="person 1">Ethan Sullivan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
-      <div class="person 1">Sophia Carter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
-      <div class="person 1">Isabella Foster &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
-      <div class="person 1">William Jenkins &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="new">Ethan Sullivan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="new">&nbsp;* New! *&nbsp;</span> <span class="infonew">+</span></div>
+      <div class="person two">Sophia Carter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="person three">Isabella Foster &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
+      <div class="person four">William Jenkins &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="info">+</span></div>
     </div>
 
     <div class="watermark">Angelo Sarria<br>Augmented Living Website</div>
