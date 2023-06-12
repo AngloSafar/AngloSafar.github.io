@@ -297,6 +297,7 @@ div.proofofrobo.show {
     flex-wrap: wrap;
     padding: 20px;
     visibility: visible;
+    z-index: 20;
 }
 
 div.iamnotahuman {
@@ -336,6 +337,7 @@ div.error.show {
     padding-left: 10px;
     visibility: visible;
     transition-delay: 1s;
+    z-index: 20;
 }
 
 span.continue {
